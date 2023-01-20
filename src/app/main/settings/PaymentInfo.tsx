@@ -40,7 +40,7 @@ const PaymentInfo = () => {
                 type="radio"
                 name="contactEmail"
                 value="default"
-                checked={emailOption === 'default' ? true : ''}
+                checked={emailOption === 'default' ? true : false}
                 onChange={handleEmailOption}
               />
               <div className="text-xs">
@@ -56,7 +56,7 @@ const PaymentInfo = () => {
                 type="radio"
                 name="contactEmail"
                 value="alternative"
-                checked={emailOption === 'alternative' ? true : ''}
+                checked={emailOption === 'alternative' ? true : false}
                 onChange={handleEmailOption}
               />
               <div className="text-xs">
