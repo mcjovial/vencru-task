@@ -6,15 +6,17 @@ const SettingsNav = () => {
   const [buttons, setButtons] = useState(navButtons)
 
   return (
-    <div className="my-8 overflow-x-auto">
-      {buttons.map((button, index) => (
-        <NavItem
-          key={index}
-          button={button}
-          index={index}
-          length={buttons.length}
-        />
-      ))}
+    <div className="my-8">
+      <div className='overflow-auto p-4'>
+        {buttons.map((button, index) => (
+          <NavItem
+            key={index}
+            button={button}
+            index={index}
+            length={buttons.length}
+          />
+        ))}
+      </div>
     </div>
   );
 };

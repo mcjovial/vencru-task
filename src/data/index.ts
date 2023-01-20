@@ -54,15 +54,15 @@ export const navItems = [
 ];
 
 export const navButtons: SettingsNavItemTYpes[] = [
-  { name: 'My details', link: '#', active: false },
-  { name: 'Profile', link: '#' },
-  { name: 'Password', link: '#' },
-  { name: 'Team', link: '#' },
-  { name: 'Plan', link: '#' },
-  { name: 'Billing', link: '#', active: true },
-  { name: 'Notifications', link: '#' },
-  { name: 'Integrations', link: '#' },
-  { name: 'API', link: '#' },
+  { name: 'My details', link: '/', active: false },
+  { name: 'Profile', link: '/' },
+  { name: 'Password', link: '/' },
+  { name: 'Team', link: '/' },
+  { name: 'Plan', link: '/' },
+  { name: 'Billing', link: '/', active: true },
+  { name: 'Notifications', link: '/' },
+  { name: 'Integrations', link: '' },
+  { name: 'API', link: '/' },
 ];
 
 export const cardOptions = [
