@@ -22,7 +22,7 @@ const Stack: FC<StackProps> = ({ avatars }) => {
         })}
         {avatars.length > 5 ? (
           <div className="w-8 h-8 rounded-full border-2 border-blueGray-50 shadow -ml-4 bg-white flex ">
-            <span className="m-auto h-8 w-8 items-center font-normal text-gray-800">{`+${
+            <span className="m-auto items-center font-normal text-gray-800">{`+${
               avatars.length % 5
             }`}</span>
           </div>
