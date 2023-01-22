@@ -53,18 +53,6 @@ export const navItems = [
   },
 ];
 
-export const navButtons: SettingsNavItemTYpes[] = [
-  { name: 'My details', link: '/', active: false },
-  { name: 'Profile', link: '/' },
-  { name: 'Password', link: '/' },
-  { name: 'Team', link: '/' },
-  { name: 'Plan', link: '/' },
-  { name: 'Billing', link: '/', active: true },
-  { name: 'Notifications', link: '/' },
-  { name: 'Integrations', link: '' },
-  { name: 'API', link: '/' },
-];
-
 export const cardOptions = [
   {
     id: '#1',
@@ -97,6 +85,7 @@ export const billsHistory: BillTypes[] = [
       'assets/images/av4.svg',
       'assets/images/av5.svg',
       'assets/images/av4.svg',
+      'assets/images/av5.svg',
       'assets/images/av5.svg',
     ],
   },

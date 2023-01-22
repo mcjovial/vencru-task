@@ -1,22 +1,35 @@
 import React, { FC } from 'react';
-import { SettingsNavItemTYpes } from '../../../utils/types';
+import { SettingsNavItem, SettingsNavItemTYpes } from '../../../utils/types';
 
 interface NavItemProps {
-  button: SettingsNavItemTYpes;
+  nav: SettingsNavItem;
   index: number;
-  length: number;
+  count: number;
+  selectedNav: string;
+  setSelectedNav: any;
 }
 
-const NavItem: FC<NavItemProps> = ({ button, index, length }) => {
+const NavItem: FC<NavItemProps> = ({
+  nav,
+  index,
+  count,
+  selectedNav,
+  setSelectedNav,
+}) => {
   return (
     <>
-      <a
-        className={`text-sm hover:bg-[#F9FAFB] border-l-0 text-primary whitespace-nowrap font-light py-2.5 px-4 border border-[#D0D5DD] ${index === 0 ? 'border-l rounded-l-lg' : ''} ${index === length - 1 ? 'rounded-r-lg' : ''} ${button.active ? 'bg-transparent' : 'bg-white'}`}
+      <button
+        value={nav.value}
+        className={`text-sm hover:bg-[#F9FAFB] border-l-0 text-primary whitespace-nowrap font-light py-2.5 px-4 border border-[#D0D5DD] ${
+          index === 0 ? 'border-l rounded-l-lg' : ''
+        } ${index === count - 1 ? 'rounded-r-lg' : ''} ${
+          selectedNav === nav.value ? 'bg-transparent' : 'bg-white'
+        }`}
         key={index}
-        href={button.link}
+        onClick={(e) => setSelectedNav(e.target.value)}
       >
-        {button.name}
-      </a>
+        {nav.name}
+      </button>
     </>
   );
 };
