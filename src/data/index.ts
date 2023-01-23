@@ -60,7 +60,6 @@ export const cardOptions = [
     number: 1234,
     expiry: '06/2024',
     logo: 'assets/images/visa.svg',
-    default: true,
   },
   {
     id: '#2',
@@ -68,7 +67,6 @@ export const cardOptions = [
     number: 1234,
     expiry: '06/2024',
     logo: 'assets/images/mastercard.svg',
-    default: false,
   },
 ];
 

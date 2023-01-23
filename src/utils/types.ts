@@ -16,11 +16,11 @@ export interface SettingsNavItemTYpes {
 }
 
 export interface PaymentCardTypes {
+  id: string;
   name: string;
   number: number;
   expiry: string;
   logo: string;
-  default: boolean;
 }
 
 export interface BillTypes {

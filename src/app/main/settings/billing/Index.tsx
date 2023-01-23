@@ -1,6 +1,6 @@
-import React from 'react'
-import BillingHistory from '../BillingHistory'
-import PaymentInfo from '../PaymentInfo'
+import React from 'react';
+import BillingHistory from './BillingHistory';
+import PaymentInfo from './PaymentInfo';
 
 const Billing = () => {
   return (
@@ -8,7 +8,7 @@ const Billing = () => {
       <PaymentInfo />
       <BillingHistory />
     </div>
-  )
-}
+  );
+};
 
-export default Billing
+export default Billing;
