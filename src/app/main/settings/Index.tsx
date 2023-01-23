@@ -49,7 +49,7 @@ const Settings = () => {
       />
       <>
         <div className='my-8'>
-          <div className='overflow-auto p-4'>
+          <div className='overflow-auto p-4 flex'>
             {values.map((nav, index) => (
               <NavItem key={index} nav={nav} index={index} selectedNav={selectedNav} setSelectedNav={setSelectedNav} count={values.length} />
             ))}
