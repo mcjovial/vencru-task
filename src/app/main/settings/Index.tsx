@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Heading from '../../../components/main/Heading';
 import NavItem from '../../../components/main/settings/NavItem';
-import {
-  SettingsNavItem,
-  SettingsNavName,
-} from '../../../utils/types';
 import API from './api/Index';
 import Billing from './billing/Index';
 import MyDetails from './details/Index';
@@ -17,8 +13,8 @@ import Team from './team/Index';
 
 const Settings = () => {
   const [selectedNav, setSelectedNav] = useState('BILLING')
-
-  const SETTINGS_NAV: Record<SettingsNavName, SettingsNavItem> = {
+  // {[index: string]:any}
+  const SETTINGS_NAV: Record<string, any> = {
     MY_DETAILS: {
       name: 'My details',
       value: 'MY_DETAILS',

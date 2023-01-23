@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { SettingsNavItem, SettingsNavItemTYpes } from '../../../utils/types';
+import { FC } from 'react';
+import { SettingsNavItem } from '../../../utils/types';
 
 interface NavItemProps {
   nav: SettingsNavItem;
@@ -26,7 +26,7 @@ const NavItem: FC<NavItemProps> = ({
           selectedNav === nav.value ? 'bg-transparent' : 'bg-white'
         }`}
         key={index}
-        onClick={(e) => setSelectedNav(e.target.value)}
+        onClick={(e) => setSelectedNav((e.target as HTMLInputElement).value)}
       >
         {nav.name}
       </button>
